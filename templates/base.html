@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>k1ki dev</title>
+    <title>k1ki dev blog | {{ user.username }}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -29,6 +29,7 @@
     {% block content %}
     {% endblock content %}
 </div>
+
 <br><br>
 <!--<footer>-->
 <!--    <h4 class="text2"><a href="{% url 'post-new' %}" style="text-decoration: none;">Yangi Post</a></h4>-->
