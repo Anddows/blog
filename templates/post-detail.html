@@ -6,8 +6,9 @@
     <h4 class="text2">{{ post.body }}</h4>
 </div>
 
-<a href="{% url 'post-edit' post.pk %}">Postni tahrirlash</a>
-<a href="{% url 'post-delete' post.pk %}">Postni o'chirish</a>
+<!-- <a href="{% url 'post-edit' post.pk %}"><h1 class="edit">Postni tahrirlash</h1></a>
+<a href="{% url 'post-delete' post.pk %}">Postni o'chirish</a> -->
+
 {% endblock content %}
 
 <style>
@@ -23,5 +24,8 @@
   font-family: sans-serif;
 }
 
+.edit {
+  display: none;
+}
 
 </style>
